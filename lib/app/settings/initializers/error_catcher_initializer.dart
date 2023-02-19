@@ -1,6 +1,6 @@
 import 'dart:developer';
 
-import 'package:fluro/app/initializers/initializer.dart';
+import 'package:fluro/app/settings/initializer.dart';
 import 'package:flutter/widgets.dart';
 
 /// {@template error_cacher_initializer}

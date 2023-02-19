@@ -1,7 +1,7 @@
 import 'dart:developer';
 
 import 'package:bloc/bloc.dart';
-import 'package:fluro/app/initializers/initializer.dart';
+import 'package:fluro/app/settings/initializer.dart';
 
 /// {@template bloc_observer_initializer}
 /// The initializer that handles bloc runtime errors.
