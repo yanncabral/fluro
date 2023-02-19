@@ -1,6 +1,3 @@
-import 'package:fluro/app/app.dart';
-import 'package:fluro/bootstrap.dart';
+import 'package:fluro/app/hosts/app_host.dart';
 
-void main() {
-  bootstrap(() => const App());
-}
+void main() => const AppHost.mobile()..run();
