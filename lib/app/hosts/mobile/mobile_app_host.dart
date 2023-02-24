@@ -4,6 +4,7 @@ import 'package:fluro/app/settings/initializer.dart';
 import 'package:fluro/app/settings/initializer_bootstrap.dart';
 import 'package:fluro/app/settings/initializers/bloc_observer_initializer.dart';
 import 'package:fluro/app/settings/initializers/error_catcher_initializer.dart';
+import 'package:fluro/design/colors.dart';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_modular/flutter_modular.dart';
@@ -25,6 +26,10 @@ class MobileAppHost extends StatelessWidget
         routeInformationParser: Modular.routeInformationParser,
         routerDelegate: Modular.routerDelegate,
         debugShowCheckedModeBanner: false,
+        theme: ThemeData(
+          scaffoldBackgroundColor: kBackgroundColor,
+          brightness: Brightness.dark,
+        ),
       ),
     );
   }
