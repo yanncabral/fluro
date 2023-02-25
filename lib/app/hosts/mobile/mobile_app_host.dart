@@ -5,6 +5,7 @@ import 'package:fluro/app/settings/initializer_bootstrap.dart';
 import 'package:fluro/app/settings/initializers/bloc_observer_initializer.dart';
 import 'package:fluro/app/settings/initializers/ensure_initialized_initializer.dart';
 import 'package:fluro/app/settings/initializers/error_catcher_initializer.dart';
+import 'package:fluro/app/settings/initializers/hydrated_bloc_initializer.dart';
 import 'package:fluro/design/colors.dart';
 
 import 'package:flutter/material.dart';
@@ -39,6 +40,7 @@ class MobileAppHost extends StatelessWidget
   List<Initializer> get initializers {
     return const [
       FlutterWidgetEnsureInitializedInitializer(),
+      HydratedBlocInitializer(),
       ErrorCatcherInitializer(),
       BlocObserverInitializer(),
     ];
