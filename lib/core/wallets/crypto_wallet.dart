@@ -1,4 +1,4 @@
-import 'package:fluro/core/currencies/currency.dart';
+import 'package:fluro/core/currencies/crypto_currency.dart';
 import 'package:fluro/core/wallets/wallet.dart';
 
 /// {@template crypto_wallet}
@@ -15,7 +15,7 @@ class CryptoWallet extends Wallet {
   final String address;
 
   @override
-  final Currency currency;
+  final CryptoCurrency currency;
 
   @override
   List<Object?> get props => [address, currency];

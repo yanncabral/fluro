@@ -19,19 +19,19 @@ mixin _$AuthenticationState {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() unauthenticated,
-    required TResult Function(Wallet wallet) authenticated,
+    required TResult Function(CryptoWallet wallet) authenticated,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? unauthenticated,
-    TResult? Function(Wallet wallet)? authenticated,
+    TResult? Function(CryptoWallet wallet)? authenticated,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? unauthenticated,
-    TResult Function(Wallet wallet)? authenticated,
+    TResult Function(CryptoWallet wallet)? authenticated,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
@@ -113,7 +113,7 @@ class _$_Unauthenticated implements _Unauthenticated {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() unauthenticated,
-    required TResult Function(Wallet wallet) authenticated,
+    required TResult Function(CryptoWallet wallet) authenticated,
   }) {
     return unauthenticated();
   }
@@ -122,7 +122,7 @@ class _$_Unauthenticated implements _Unauthenticated {
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? unauthenticated,
-    TResult? Function(Wallet wallet)? authenticated,
+    TResult? Function(CryptoWallet wallet)? authenticated,
   }) {
     return unauthenticated?.call();
   }
@@ -131,7 +131,7 @@ class _$_Unauthenticated implements _Unauthenticated {
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? unauthenticated,
-    TResult Function(Wallet wallet)? authenticated,
+    TResult Function(CryptoWallet wallet)? authenticated,
     required TResult orElse(),
   }) {
     if (unauthenticated != null) {
@@ -182,7 +182,7 @@ abstract class _$$_AuthenticatedCopyWith<$Res> {
           _$_Authenticated value, $Res Function(_$_Authenticated) then) =
       __$$_AuthenticatedCopyWithImpl<$Res>;
   @useResult
-  $Res call({Wallet wallet});
+  $Res call({CryptoWallet wallet});
 }
 
 /// @nodoc
@@ -202,7 +202,7 @@ class __$$_AuthenticatedCopyWithImpl<$Res>
       null == wallet
           ? _value.wallet
           : wallet // ignore: cast_nullable_to_non_nullable
-              as Wallet,
+              as CryptoWallet,
     ));
   }
 }
@@ -213,7 +213,7 @@ class _$_Authenticated implements _Authenticated {
   const _$_Authenticated(this.wallet);
 
   @override
-  final Wallet wallet;
+  final CryptoWallet wallet;
 
   @override
   String toString() {
@@ -241,7 +241,7 @@ class _$_Authenticated implements _Authenticated {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() unauthenticated,
-    required TResult Function(Wallet wallet) authenticated,
+    required TResult Function(CryptoWallet wallet) authenticated,
   }) {
     return authenticated(wallet);
   }
@@ -250,7 +250,7 @@ class _$_Authenticated implements _Authenticated {
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? unauthenticated,
-    TResult? Function(Wallet wallet)? authenticated,
+    TResult? Function(CryptoWallet wallet)? authenticated,
   }) {
     return authenticated?.call(wallet);
   }
@@ -259,7 +259,7 @@ class _$_Authenticated implements _Authenticated {
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? unauthenticated,
-    TResult Function(Wallet wallet)? authenticated,
+    TResult Function(CryptoWallet wallet)? authenticated,
     required TResult orElse(),
   }) {
     if (authenticated != null) {
@@ -301,9 +301,9 @@ class _$_Authenticated implements _Authenticated {
 }
 
 abstract class _Authenticated implements AuthenticationState {
-  const factory _Authenticated(final Wallet wallet) = _$_Authenticated;
+  const factory _Authenticated(final CryptoWallet wallet) = _$_Authenticated;
 
-  Wallet get wallet;
+  CryptoWallet get wallet;
   @JsonKey(ignore: true)
   _$$_AuthenticatedCopyWith<_$_Authenticated> get copyWith =>
       throw _privateConstructorUsedError;

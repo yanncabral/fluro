@@ -1,4 +1,4 @@
-import 'package:fluro/core/currencies/blockchain.dart';
+import 'package:fluro/core/currencies/network.dart';
 import 'package:fluro/core/currencies/currency.dart';
 
 /// {@template crypto_currency}

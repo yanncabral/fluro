@@ -10,6 +10,6 @@ class AuthenticationState with _$AuthenticationState {
   /// {@template authentication_state_authenticated}
   /// The user is authenticated.
   /// {@endtemplate}
-  const factory AuthenticationState.authenticated(Wallet wallet) =
+  const factory AuthenticationState.authenticated(CryptoWallet wallet) =
       _Authenticated;
 }
