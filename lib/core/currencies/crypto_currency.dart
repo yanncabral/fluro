@@ -1,5 +1,5 @@
-import 'package:fluro/core/currencies/network.dart';
 import 'package:fluro/core/currencies/currency.dart';
+import 'package:fluro/core/currencies/network.dart';
 
 /// {@template crypto_currency}
 /// Describes a crypto currency.

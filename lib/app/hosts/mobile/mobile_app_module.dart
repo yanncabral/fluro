@@ -1,3 +1,4 @@
+import 'package:fluro/modules/authentication/main/authentication_module.dart';
 import 'package:fluro/modules/onboarding/main/onboarding_module.dart';
 import 'package:flutter_modular/flutter_modular.dart';
 
@@ -10,6 +11,10 @@ class MobileAppModule extends Module {
     ModuleRoute<void>(
       '/',
       module: OnboardingModule(),
+    ),
+    ModuleRoute<void>(
+      '/authentication',
+      module: AuthenticationModule(),
     ),
   ];
 }

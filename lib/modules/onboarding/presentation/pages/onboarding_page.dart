@@ -1,4 +1,3 @@
-import 'package:fluro/design/colors.dart';
 import 'package:fluro/design/widgets/fluro_action_button.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_modular/flutter_modular.dart';
@@ -75,7 +74,9 @@ class OnboardingPage extends StatelessWidget {
                       fontWeight: FontWeight.bold,
                     ),
                   ),
-                  onPressed: () {},
+                  onPressed: () {
+                    Modular.to.pushNamed('/authentication/methods');
+                  },
                 ),
               ],
             ),
